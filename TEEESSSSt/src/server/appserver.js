@@ -4,6 +4,7 @@ const mysql=require("mysql2");
 let bodyParser = require('body-parser');
 const cors=require("cors");
 const { json } = require("body-parser");
+const PORT=3001;
 
 const connection=mysql.createConnection({
     host:"localhost",

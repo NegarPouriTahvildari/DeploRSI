@@ -139,8 +139,8 @@ app.get(`/getUserIdLast`, (req, res) => {
   })   
 });
 
-app.listen(3000, () => {
- //  console.log("running 3000");
+app.listen(process.env.PORT || PORT, () => {
+  console.log("running SERVER");
 });
 
 connection.connect(err=>{
